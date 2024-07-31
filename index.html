@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo da Forca</h1>
+        <div class="word" id="word"></div>
+        <div class="message" id="message"></div>
+        <div class="letters" id="letters"></div>
+        <div class="hangman" id="hangman">
+            <div class="gallows">
+                <div class="base"></div>
+                <div class="post"></div>
+                <div class="beam"></div>
+                <div class="rope"></div>
+            </div>
+            <div class="man">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="arm-left"></div>
+                <div class="arm-right"></div>
+                <div class="leg-left"></div>
+                <div class="leg-right"></div>
+            </div>
+        </div>
+        <button class="reset-button" onclick="resetGame()">Reiniciar Jogo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

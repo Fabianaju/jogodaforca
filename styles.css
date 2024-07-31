@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.word {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.letter {
+    margin: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.hangman {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px auto;
+}
+
+.gallows {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.gallows .base, .gallows .post, .gallows .beam, .gallows .rope {
+    background-color: #333;
+}
+
+.gallows .base {
+    width: 100px;
+    height: 10px;
+}
+
+.gallows .post {
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+.gallows .beam {
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.gallows .rope {
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+
+.man {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.man .head, .man .body, .man .arm-left, .man .arm-right, .man .leg-left, .man .leg-right {
+    background-color: #333;
+    position: absolute;
+    display: none;
+}
+
+.man .head {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.man .body {
+    width: 10px;
+    height: 50px;
+    top: 20px;
+    left: 5px;
+}
+
+.man .arm-left, .man .arm-right {
+    width: 30px;
+    height: 10px;
+    top: 30px;
+}
+
+.man .arm-left {
+    left: -20px;
+}
+
+.man .arm-right {
+    left: 10px;
+}
+
+.man .leg-left, .man .leg-right {
+    width: 30px;
+    height: 10px;
+    top: 60px;
+}
+
+.man .leg-left {
+    left: -10px;
+}
+
+.man .leg-right {
+    left: 10px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset-button:hover {
+    background-color: #e55a00;
+}
